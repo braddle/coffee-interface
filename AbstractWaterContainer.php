@@ -19,6 +19,15 @@ abstract class AbstractWaterContainer implements WaterContainer
 	abstract protected function getSize();
 
 	/**
+	 * returns the number of litres that we can consided the current container
+	 * is running low on water.
+	 *
+	 * @author Mark Bradley<mark@mark-bradley.net>
+	 * @returns integer
+	 */
+	abstract public function getMinimumLevel();
+
+	/**
 	 *
 	 * @author Mark Bradley<mark@mark-bradley.net>
 	 * @returns void

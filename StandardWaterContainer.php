@@ -1,4 +1,4 @@
-<?php
+A<?php
 
 /**
  *
@@ -16,5 +16,18 @@ class StandardWaterContainer extends AbstractWaterContainer
 	{
 		return 2;
 	}
+
+	/**
+	 * returns the number of litres that we can consided the current container
+	 * is running low on water.
+	 *
+	 * @author Mark Bradley<mark@mark-bradley.net>
+	 * @returns integer
+	 */
+	abstract public function getMinimumLevel()
+	{
+		return 0.5;
+	}
+
 
 } // StandardWaterContainer

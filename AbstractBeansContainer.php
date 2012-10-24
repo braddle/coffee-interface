@@ -4,7 +4,6 @@ abstract class AbstractBeansContainer implements BeansContainer
 {
 	
 	private $number_of_beans;
-
 	
 	/**
 	 * Returns the total number of beans the BeansContainer can contain
@@ -14,6 +13,15 @@ abstract class AbstractBeansContainer implements BeansContainer
 	 * @return integer
 	 */
 	abstract public function getSize();
+
+	/**
+	 * returns the number of bean that we can consided the current container
+	 * is running low on beans.
+	 *
+	 * @author Mark Bradley<mark@mark-bradley.net>
+	 * @returns integer
+	 */
+	abstract public function getMinimumLevel();
 	
 	/**
 	 *
